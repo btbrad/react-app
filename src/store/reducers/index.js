@@ -1,7 +1,9 @@
-function index(state, action) {
+function index(state = {}, action) {
   return state
 }
 
-export default {
+const reducers = {
   index
 }
+
+export default reducers
