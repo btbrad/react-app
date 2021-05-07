@@ -23,6 +23,16 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": {
+    "/miaov": {
+      "target": "https://data.miaov.com/",
+      "secure": true,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/miaov": ""
+      }
+    }
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
